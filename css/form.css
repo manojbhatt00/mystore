@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* form part  */
+#invert { 
+    padding: 2px;
+    filter: invert(100%);
+    margin:0px 10px;
+}
+
+#form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 70%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 10ms;
+}
+
+#form h1 {
+    margin: 50px auto 10px;
+    text-decoration: underline;
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 4px black;
+}
+
+#contact {
+    text-align: center;
+
+}
+
+input[type] {
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: 22px auto;
+    border-radius: 9px;
+    height: 54px;
+    font-size: 1.3rem;
+}
+
+#submit {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#submit:hover {
+    background-color: rgb(61, 59, 59);
+    color: rgb(255, 255, 255);
+}
+
+/* form background   */
+#back {
+    margin-top: 60px;
+    position: relative;
+    padding-bottom: 60px;
+    box-shadow: 0px 3px 5px 2px rgb(73, 68, 68); ;
+}
+
+#back::before {
+    content: "";
+    background: url("../images/contact\ background.png") no-repeat center center/cover;
+    opacity: 0.8;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+ /* extradiv for contact  */
+
+.contact_detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: center;
+    padding: 0px 130px;
+    
+}
+
+.item_contact {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:2 230px;
+    margin: 10px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+   box-shadow: 1px 1px 5px 2px rgb(73, 68, 68);
+}
+
+
+/* animation  */
+@keyframes move {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+
+}
+
+/* media quarry */
+
+@media screen and (max-width: 780px)
+{
+    .contact_detail {
+    
+        
+        padding: 0px 10px;
+        
+    }
+}

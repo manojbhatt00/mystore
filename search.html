@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Search</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- bootstrap  -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #invert {
+            padding: 2px;
+            filter: invert(100%);
+            margin: 0px 10px;
+        }
+
+        #shadow {
+
+            transition: all 0.7s;
+        }
+
+        #shadow:hover {
+            box-shadow: 0px 0px 10px 0px black;
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- **************header start ******************* -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container text-uppercase p-1">
+            <i id="invert" class="fa-3x fas fa-shopping-bag"></i>
+            <a class="navbar-brand" href="#">MyStore.Com</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">prouduct</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./form.html">contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./search.html"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./add to cart.html"> <i class="fas fa-shopping-cart fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ==============search section ends here============== -->
+
+    <section class="search_section py-5 my-5" id="search_section">
+        <div class="container">
+            <div class="title text-center mb-5">
+                <span>
+                    <h2>Search <a href="#"><i class="fas fa-search"></i></a></h2>
+                </span>
+            </div>
+            <div class="row">
+
+                <div class="col-md-10 mx-auto">
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" value="xyz">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button"><i class="far fa-search">search</i></button>
+                        </span>
+                    </div>
+
+                    <small>Showing all results matching "xyz"</small>
+
+                    <!-- BEGIN TABLE RESULT -->
+                    <div class="table-responsive mt-3">
+                        <table class="table table-hover">
+                            <tbody class="border-bottom">
+                                <tr>
+                                    <td class="number text-center">1</td>
+                                    <td class="image"><img src="./images/s3.jpg" width="100px"
+                                            class="img img-fluid" alt=""></td>
+                                    <td class="product"><strong>men sport shoes with details</strong><br> Men black Sauve 1.0 Running Shoes
+                                    </td>
+                                    <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="far fa-star"></i></span></td>
+                                    <td class="price text-right">₹1399</td>
+                                </tr>
+                                <tr>
+                                    <td class="number text-center">2</td>
+                                    <td class="image"><img src="./images/product-2.jpg" width="100px"
+                                            class="img img-fluid" alt=""></td>
+                                    <td class="product"><strong>men sport shoes with details</strong><br>
+                                        Men black Sauve 1.0 Running Shoes </td>
+                                    <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="far fa-star"></i><i class="far fa-star"></i></span></td>
+                                    <td class="price text-right">₹1799</td>
+                                </tr>
+                                <tr>
+                                    <td class="number text-center">3</td>
+                                    <td class="image"><img src="./images/product-11.jpg" width="100px"
+                                            class="img img-fluid" alt=""></td>
+                                    <td class="product"><strong>men sport shoes with details</strong><br>
+                                        Men Grey Sauve 1.0 Running Shoes
+                                    </td>
+                                    <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i></span></td>
+                                    <td class="price text-right">₹1999</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- ***************table end************** -->
+                </div>
+                <!-- ****************end search items"************* -->
+            </div>
+        </div>
+    </section>
+
+    <!-- *******************search section ends here*******************-->
+
+    <!-- *****************footer section start here ************* -->
+    <section class="footer_section " id="f_section">
+        <footer>
+            <div class="d-flex justify-content-center">
+                <div class="links">
+                    <div class="links_item" id="links_item-1">
+                        <div class="footer_title" id="f_tittle">
+                                <i id="invert" class="fa-3x fas fa-shopping-bag"></i>
+                            <h3 style="color:darkgreen; border:3px solid royalblue ;">Mystore.Com</h3>
+                        </div>
+                        <div>
+                            Mystore.Com is a leading online fashion clothes selling website based
+                            and headquatered in Bangalore,India.
+                        </div>
+                    </div>
+                    <div class="links_item" id="links_item-2">
+                        <div class="footer_title">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">About</a></li>
+                                <li><a href="javascript:;">Offers & Discounts</a></li>
+                                <li><a href="javascript:;">Get Coupon</a></li>
+                                <li><a href="javascript:;">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links_item" id="links_item-3">
+                        <div class="footer_title">
+                            <h3>New Products</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Woman Cloth</a></li>
+                                <li><a href="javascript:;">Fashion Accessories</a></li>
+                                <li><a href="javascript:;">Man Accessories</a></li>
+                                <li><a href="javascript:;">Rubber made Toys</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links_item" id="links_item-4">
+                        <div class="footer_title">
+                            <h3>Support</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                                <li><a href="javascript:;">Terms & Conditions</a></li>
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                                <li><a href="javascript:;">Report a Payment Issue</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top">
+                <p id="bottom_gap" class="text-center mt-3">
+                    Copyright ©2020 All rights reserved &copy;| Company Name: <label>Mystore.com</label>
+                    | Designed by <a rel="sponsored" href="#" target="_blank">Manoj Bhatt</a>
+                </p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- *****************Optional JavaScript *******************-->
+    <!-- ****************jQuery first, then Popper.js, then Bootstrap JS*********************-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

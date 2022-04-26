@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- bootstrap  -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #invert {
+            padding: 2px;
+            filter: invert(100%);
+            margin: 0px 10px;
+        }
+
+        #shadow {
+
+            transition: all 0.7s;
+        }
+
+        #shadow:hover {
+            box-shadow: 0px 0px 10px 0px black;
+            transform: translateY(-10px);
+        }
+        .bg_checkout_1{
+            background-image: linear-gradient(62deg, #26c8ce 0%, #3950d4 100%);
+        }
+        .list-group-item{
+    background-color: inherit !important;
+}
+    </style>
+</head>
+
+<body>
+    <!-- **************header start ******************* -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container text-uppercase p-1">
+            <i id="invert" class="fa-3x fas fa-shopping-bag"></i>
+            <a class="navbar-brand" href="#">MyStore.Com</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">prouduct</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./form.html">contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./search.html"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./add to cart.html"> <i class="fas fa-shopping-cart fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <!-- ==============Checkout starts here============== -->
+     <section class="Checkout py-5 my-5" >
+        <div id="Checkout" class="container ">
+            <div class="section_title text-center mb-5">
+                <h1 style="background-image:linear-gradient(62deg, #26c8ce 0%, #3950d4 100%);;" class="text-capitalize">Checkout</h1>
+            </div>
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-8">
+                    <!-- Card -->
+                    <div class="card bg_checkout_1 pb-5">
+                        <div class="card-body">
+                            <h5 class="mb-5">Billing details</h5>
+                            <!-- Grid row -->
+                            <div class="row">
+                                <!-- Grid column -->
+                                <div class="col-lg-6">
+                                    <!-- First name -->
+                                    <div class="form-group mb-0 mb-lg-4">
+                                        <label for="firstName">First name</label>
+                                        <input type="text" id="firstName" class="form-control mb-0 mb-lg-2">
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-lg-6">
+                                    <!-- Last name -->
+                                    <div class="form-group md-outline">
+                                        <label for="lastName">Last name</label>
+                                        <input type="text" id="lastName" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+                            </div>
+                            <!-- Grid row -->
+
+                            <!-- Phone -->
+                            <div class="form-group">
+                                <label for="form18">Phone</label>
+                                <input type="number" id="form18" class="form-control">
+                            </div>
+
+                            <!-- Email address -->
+                            <div class="form-group">
+                                <label for="form19">Email address</label>
+                                <input type="email" id="form19" class="form-control">
+                            </div>
+
+                            <!-- Country -->
+                            <div class="d-flex flex-wrap">
+                                <div class="w-100">
+                                    <label>Country</label>
+                                    <select class="custom-select form-group">
+                                        <option value="" selected>Choose your option</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Address Part 1 -->
+                            <div class="form-group">
+                                <label for="form14">Address Line 1</label>
+                                <input type="text" id="form14" placeholder="House number and street name"
+                                    class="form-control">
+                            </div>
+
+                            <!-- Address Part 2 -->
+                            <div class="form-group">
+                                <label for="form15">Address Line 2</label>
+                                <input type="text" id="form15" placeholder="Apartment, suite, unit etc. (optional)"
+                                    class="form-control">
+                            </div>
+
+                            <!-- Postcode / ZIP -->
+                            <div class="form-group">
+                                <label for="form16">Postcode / ZIP</label>
+                                <input type="text" id="form16" class="form-control">
+                            </div>
+
+                            <!-- Town / City -->
+                            <div class="form-group">
+                                <label for="form17">Town / City</label>
+                                <input type="text" id="form17" class="form-control">
+                            </div>
+
+                            <!-- Additional information -->
+                            <div class="form-group">
+                                <label for="form76">Additional information</label>
+                                <textarea id="form76" class="md-textarea form-control" rows="4"></textarea>
+                            </div>
+                            <!-- <button class="btn btn-success"><i class="fa fa-check"></i> Purchase</button> -->
+                            <div class="text-center">
+                                <a href="./payment_complete.html" class="btn btn-primary">
+                                    <i class="fa fa-check mr-2"></i>Purchase
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 bg_checkout_1 h-25 rounded">
+                    <!-- Card -->
+                    <div class="mb-3">
+                        <div class="pt-4">
+                            <h5 class="mb-3">Order summary</h5>
+                            <ul class="list-group list-group-flush">
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
+                                    <span>Product name 1</span>
+                                    <span>x2</span>
+                                    <span>₹1400</span>
+                                </li>
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
+                                    <span>Product name 2</span>
+                                    <span>x2</span>
+                                    <span>₹800</span>
+                                </li>
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-top px-0 mb-3">
+                                    <div>
+                                        <strong>Total amount</strong>
+                                        <strong>
+                                            <p class="mb-0">(including VAT)</p>
+                                        </strong>
+                                    </div>
+                                    <span><strong>₹2200</strong></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ********************Checkout ends here*****************-->
+         <!-- footer section start here  -->
+         <section class="footer_section " id="f_section">
+            <footer>
+                <div class="d-flex justify-content-center">
+                    <div class="links">
+                        <div class="links_item" id="links_item-1">
+                            <div class="footer_title" id="f_tittle">
+                                   <i id="invert" class="fa-3x fas fa-shopping-bag"></i>
+                                <h3 style="color:darkgreen; border:3px solid royalblue ;">Mystore.Com</h3>
+                            </div>
+                            <div>
+                                Mystore.Com is a leading online fashion clothes selling website based
+                                and headquatered in Bangalore,India.
+                            </div>
+                        </div>
+                        <div class="links_item" id="links_item-2">
+                            <div class="footer_title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="footer_links">
+                                <ul>
+                                    <li><a href="javascript:;">About</a></li>
+                                    <li><a href="javascript:;">Offers & Discounts</a></li>
+                                    <li><a href="javascript:;">Get Coupon</a></li>
+                                    <li><a href="javascript:;">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="links_item" id="links_item-3">
+                            <div class="footer_title">
+                                <h3>New Products</h3>
+                            </div>
+                            <div class="footer_links">
+                                <ul>
+                                    <li><a href="javascript:;">Woman Cloth</a></li>
+                                    <li><a href="javascript:;">Fashion Accessories</a></li>
+                                    <li><a href="javascript:;">Man Accessories</a></li>
+                                    <li><a href="javascript:;">Rubber made Toys</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="links_item" id="links_item-4">
+                            <div class="footer_title">
+                                <h3>Support</h3>
+                            </div>
+                            <div class="footer_links">
+                                <ul>
+                                    <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                                    <li><a href="javascript:;">Terms & Conditions</a></li>
+                                    <li><a href="javascript:;">Privacy Policy</a></li>
+                                    <li><a href="javascript:;">Report a Payment Issue</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <p id="bottom_gap" class="text-center mt-3">
+                        Copyright ©2020 All rights reserved &copy;| Company Name: <label>Mystore.com</label>
+                        | Designed by <a rel="sponsored" href="#" target="_blank">Manoj Bhatt</a>
+                    </p>
+                </div>
+            </footer>
+        </section>
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
+    
+    </html>
